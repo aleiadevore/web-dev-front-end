@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <title>Holberton - Web Stack - Bootstrap</title>
+        <meta name="description" content="Bootstrap is a free and open-source CSS framework">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body class="container-fluid p-0">
+        <div class="row">
+            <!-- p refers to padding. 2 = $spacer * .5 -->
+            <div class="col-lg text-white text-center bg-primary p-2">Primary</div>
+            <div class="col-lg text-white text-center bg-success p-2">Success</div>
+            <div class="col-lg text-white text-center bg-danger p-2">Danger</div>
+            <div class="col-lg text-white text-center bg-warning p-2">Warning</div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+            <div class="col-sm text-white text-center bg-primary p-2">Primary</div>
+            <div class="col-sm text-white text-center bg-success p-2">Success</div>
+            <div class="col-sm text-white text-center bg-danger p-2">Danger</div>
+            <div class="col-sm text-white text-center bg-warning p-2">Warning</div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+            <!-- widths will add to 12 -->
+            <div class="col-lg-2 text-white text-center bg-primary p-2">Primary</div>
+            <div class="col-lg-4 text-white text-center bg-success p-2">Success</div>
+            <div class="col-lg-6 text-white text-center bg-danger p-2">Danger</div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+            <!-- setting base as smallest so as not to worry about xs, etc -->
+            <div class="col text-white text-center bg-primary order-xl-1 order-lg-2 order-md-3 order-4 p-2">Primary</div>
+            <div class="col text-white text-center bg-success order-xl-2 order-lg-3 order-md-4 order-1 p-2">Success</div>
+            <div class="col text-white text-center bg-danger order-xl-3 order-lg-4 order-md-1 order-2 p-2">Danger</div>
+            <div class="col text-white text-center bg-warning order-xl-4 order-lg-1 order-md-2 order-3 p-2">Warning</div>
+        </div>
+
+        <hr/>
+
+        <div class="row justify-content-between">
+            <!-- Q: When is if better to do justify-content-lg-between, etc?-->
+            <div class="col-md-2 text-white text-center bg-primary p-2">Primary</div>
+            <div class="col-md-2 text-white text-center bg-success p-2">Success</div>
+        </div>
+
+        <hr/>
+
+        <div class="row justify-content-between">
+            <!-- Move columns to the right using .offset-md-* classes. These classes increase the left margin of a column by * columns.-->
+            <div class="col-md-2 text-white text-center bg-primary p-2">Primary</div>
+            <div class="col-md-2 offset-md-2 text-white text-center bg-success p-2">Success</div>
+            <div class="col-md-2 text-white text-center bg-danger p-2">Danger</div>
+        </div>
+    </body>
+</html>
